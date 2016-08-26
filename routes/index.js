@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+/* POST placeholder */
+router.post('/tweets', function(req, res, next) {
+  res.json({});
+});
+
 module.exports = router;
