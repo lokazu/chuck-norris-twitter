@@ -17,7 +17,9 @@ router.get('/', function(req, res, next) {
 
 /* POST placeholder */
 router.post('/tweets', function(req, res, next) {
-  res.json({});
+  T.post('statuses/update', { status: req.body.joke }, function(err, data, response) {
+  res.json(data);
+})
 });
 
 module.exports = router;
